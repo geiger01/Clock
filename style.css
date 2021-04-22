@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #20002c, #cbb4d4);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+  width: 50%;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.second-hand {
+  height: 2px;
+  background: rgb(197, 128, 128);
+}
+
+.min-hand {
+  height: 3.5px;
+  background: rgb(46, 66, 92);
+}
+
+.center-block {
+  background: black;
+  border-radius: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: 48.5%;
+  left: 48.2%;
+}
